@@ -423,8 +423,7 @@
                     "name": "current",
                     "dependsOn": [
                         "[concat('Microsoft.App/containerapps/', parameters('containerAppName'))]",
-                        "[concat('Microsoft.ManagedIdentity/userAssignedIdentities/', parameters('oidcUserIdentity'))]",
-                        "[concat('Microsoft.Resources/deployments/acadbconnection')]"
+                        "[concat('Microsoft.ManagedIdentity/userAssignedIdentities/', parameters('oidcUserIdentity'))]"
                     ],
                     "properties": {
                         "repoUrl": "[parameters('repoUrl')]",
