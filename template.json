@@ -254,7 +254,7 @@
                         "repo": {
                             "url": "[parameters('repoUrl')]",
                             "branch": "[parameters('branch')]"
-                        }
+                        },
                         "metaData": {
                             "type": "Microsoft.App/containerapps"
                         }
