@@ -135,7 +135,7 @@
                     "properties": {
                         "resourceId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/staticSites/', parameters('staticSiteName'))]",
                         "location": "[parameters('location')]",
-                        "friendlyName": "Todo Frontend",
+                        "friendlyName": "Chatbot Frontend",
                         "deployment": {
                             "id": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/',  parameters('resourceGroupName'),'/providers/Microsoft.Resources/deployments/', parameters('deploymentName'))]",
                             "provisioningState": "InProgress"
@@ -246,7 +246,7 @@
                     "properties": {
                         "resourceId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourceGroups/', parameters('resourceGroupName'),'/providers/Microsoft.App/containerapps/', parameters('containerAppName'))]",
                         "location": "[parameters('location')]",
-                        "friendlyName": "Todo Backend",
+                        "friendlyName": "Chatbot Backend",
                         "deployment": {
                             "id": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/',  parameters('resourceGroupName'),'/providers/Microsoft.Resources/deployments/', parameters('deploymentName'))]",
                             "provisioningState": "InProgress"
