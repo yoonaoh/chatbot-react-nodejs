@@ -1,0 +1,31 @@
+{
+      version: '1.0.0.0',
+      components: [
+        {
+          id: 'frontend',
+          friendlyName: 'Todo Frontend',
+          type: 'static',
+          appLocation: './client',
+          linkedTo: ['backend'],
+          sku: {
+            sku: 'Standard',
+            code: 'Standard',
+          },
+          outputLocation: 'build',
+        },
+        {
+          id: 'backend',
+          friendlyName: 'Todo Backend',
+          type: 'api',
+          appLocation: './server',
+          linkedTo: ['database'],
+          ingressPort: '3001',
+        },
+        {
+          id: 'database',
+          friendlyName: 'Postgres Database',
+          type: 'database',
+          resourceType: 'postgres',
+        },
+      ]
+}
