@@ -26,6 +26,6 @@
           friendlyName: 'Postgres Database',
           type: 'database',
           resourceType: 'postgres',
-        },
+        }
       ]
 }
