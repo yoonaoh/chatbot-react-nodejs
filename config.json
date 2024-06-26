@@ -3,7 +3,7 @@
   "components": [
     {
       "id": "frontend",
-      "friendlyName": "Todo Frontend",
+      "friendlyName": "Chatbot Frontend",
       "type": "static",
       "appLocation": "./client",
       "linkedTo": ["backend"],
@@ -11,17 +11,10 @@
     },
     {
       "id": "backend",
-      "friendlyName": "Todo Backend",
+      "friendlyName": "Chatbot Backend",
       "type": "api",
       "appLocation": "./server",
-      "linkedTo": ["database"],
       "ingressPort": "3001"
-    },
-    {
-      "id": "database",
-      "friendlyName": "Postgres Database",
-      "type": "database",
-      "resourceType": "postgres"
     }
   ]
 }
